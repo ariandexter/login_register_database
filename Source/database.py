@@ -49,7 +49,7 @@ class Database:
         data1=self.cursor.execute(query1)
         data2=self.cursor.execute(query2)
         fix = data1 + data2
-        if fix == 0:
+        if fix <= 1:
             messagebox.showerror('login problem', 'Error: Email or password not correct!') 
         else:
             a_website = "https://github.com/ariandexter"
